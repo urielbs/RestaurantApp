@@ -1,8 +1,8 @@
-
+import { Link } from 'react-router-dom'
 
 export default function Registro() {
   return (
-    //Fragment
+    //Fragment Registro
     <> 
       <h1 className="text-4xl font-black">Crea tu cuenta</h1>
       <p>Crea tu Cuenta llenando el formulario</p>
@@ -82,6 +82,12 @@ export default function Registro() {
 
         </form>
       </div>
+
+      <nav className="mt-5"> 
+        <Link to="/auth/login">
+          ¿Ya tienes cuenta? Inicia Sesion
+        </Link>
+      </nav>
     </>
     
   )
